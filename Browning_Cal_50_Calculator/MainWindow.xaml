@@ -1,0 +1,38 @@
+﻿<Window x:Class="Browning_Cal_50_Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Browning_Cal_50_Calculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="270">
+    <Grid>
+        <TextBox x:Name="numTb1" Height="23" Margin="74,80,74,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBox x:Name="numTb2" Height="23" Margin="74,160,74,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBlock x:Name="txt2" HorizontalAlignment="Left" Margin="74,140,0,0" TextWrapping="Wrap" Text="Число 2" VerticalAlignment="Top"/>
+        <TextBlock x:Name="txt1" HorizontalAlignment="Left" Margin="74,60,0,0" TextWrapping="Wrap" Text="Число 1" VerticalAlignment="Top"/>
+        <Label x:Name="lbRes" Content="0" Margin="86,205,74,174" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1" ScaleX="1"/>
+                    <SkewTransform AngleY="0" AngleX="0"/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button x:Name="buttPlus" Content="+" Margin="28,299,204,90" FontSize="14" Click="buttPlus_Click"/>
+        <Button x:Name="buttMinus" Content="-" Margin="74,299,158,90" FontSize="14" Click="buttMinus_Click"/>
+        <Button x:Name="buttX" Content="*" Margin="116,299,116,90" FontSize="14" RenderTransformOrigin="0.468,0.563" Click="buttX_Click"/>
+        <Button x:Name="buttDiv" Content="/" Margin="158,299,74,90" FontSize="14" Click="buttDiv_Click"/>
+        <Button x:Name="buttPer" Content="%" Margin="204,299,28,90" FontSize="14" Click="buttPer_Click"/>
+        <Button x:Name="buttSin" Content="sin" Margin="28,339,204,50" FontSize="14" Click="buttSin_Click"/>
+        <Button x:Name="buttCos" Content="cos" Margin="74,339,158,50" FontSize="14" Click="buttCos_Click"/>
+        <Button x:Name="buttLoh" Content="log" Margin="116,339,116,50" FontSize="14" Click="buttLoh_Click"/>
+        <Button x:Name="buttPow" Content="^2" Margin="158,339,74,50" FontSize="14" Click="buttPow_Click"/>
+        <Button x:Name="buttPowN" Content="^n" Margin="204,339,28,49" FontSize="14" Click="buttPowN_Click"/>
+        <Button x:Name="buttSqrt" Content="sqrt" Margin="28,379,158,10" FontSize="14" Click="buttSqrt_Click"/>
+        <Button x:Name="buttKlee" Content="C" Margin="116,379,28,10" FontSize="14" Click="buttKlee_Click"/>
+
+    </Grid>
+</Window>
